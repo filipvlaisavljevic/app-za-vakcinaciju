@@ -27,6 +27,12 @@
   </ol>
 </details>
 
+## Boje korištene u projektu
+
+- #FF39A3DB dugmad
+- bijela
+- crna
+
 ## To-do lista
 
 - provjeru da li korisnik ima prepreku za primanje vakcine (trenutno boluje od virusa Covid-19, trudnoća i sl.) -> Stefan
