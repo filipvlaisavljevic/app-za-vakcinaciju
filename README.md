@@ -1,5 +1,4 @@
-# app-za-vakcinaciju
-Mobilna aplikacija koja služi za prijavu za vakcinaciju
+
 
 <br />
 <p >
