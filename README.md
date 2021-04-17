@@ -33,6 +33,11 @@
 - bijela
 - crna
 
+## Aktivnosti
+- pocetni_ekran -> početni ekran kao dobrodošlica
+- provjera_korisnika -> korisnik unosi ukoliko boluje od neke bolesti, ukoliko ne, ostavlja polje prazno, napisati adekvatnu poruku i upute korisniku
+- osnovne_informacije -> korisnik unosi osnovne informacije o sebi
+
 ## To-do lista
 
 - provjeru da li korisnik ima prepreku za primanje vakcine (trenutno boluje od virusa Covid-19, trudnoća i sl.) -> Stefan
