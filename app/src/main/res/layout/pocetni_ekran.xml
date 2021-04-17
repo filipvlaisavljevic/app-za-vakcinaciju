@@ -25,7 +25,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/asap"
         android:gravity="center"
-        android:text="DA LI RADI?"
+        android:text="Prijava za vakcinaciju"
         android:textColor="#2596BE"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
