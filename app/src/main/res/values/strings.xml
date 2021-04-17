@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Vakcinacija - Stefan &amp; Filip</string>
+    <string name="provjera_bolesti">Ukoliko bolujete od neke bolesti, u polje iznad navedite koja je bolest u pitanju. Ukoliko ne bolujete od neke bolesti, ostavite polje prazno.</string>
+    <string name="bolest">Bolujem od...</string>
+    <string name="da_li_bolujete">Da li bolujete od neke bolesti?</string>
+    <string name="btn_provjera_bolesti">Nastavi ka vakcinaciji</string>
 </resources>
