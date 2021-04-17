@@ -1,0 +1,64 @@
+# app-za-vakcinaciju
+Mobilna aplikacija koja služi za prijavu za vakcinaciju
+
+<br />
+<p >
+  <a href="https://github.com/github_username/repo_name">
+    <img src="https://i.imgur.com/Mx9CcVW.png" alt="Logo" width="80" height="80">
+  </a> <h3 >Aplikacija za vakcinaciju</h3>
+
+  <p >
+    Mobilna aplikacija napravljena sa ciljem lakše evidencije i prijava za vakcinaciju tijekom pandemije izazvane Covid-19 virusom.
+    <br />
+    <br />
+    <a href="#dodati_youtube_link">Pogledaj Demo</a>
+  </p>
+</p>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Sadržaj projekta</h2></summary>
+  <ol>
+    <li><a href="#o-projektu">Informacije o projektu</a></li>
+    <li><a href="#getting-started">Alati korišteni prilikom izrade projekta</a></li>
+    <li><a href="#funkcije">Pregled kroz funkcije aplikacije i mogućnosti</a></li>
+    <li><a href="#o-autorima">Informacije o autorima projekta</a></li>
+  </ol>
+</details>
+
+
+<!-- INFORMACIJE O PROJEKTU -->
+## Informacije o projektu
+
+:small_blue_diamond: Napisati osnovne informacije o aplikaciji, šta nudi, kako se koristi i koliko je efikasna i korisna.
+
+<!-- ALATI KORISTENI PRILIKOM IZRADE PROJEKTA -->
+
+## Alati korišteni prilikom izrade projekta
+
+:small_blue_diamond: Napisati u kojem okruženju je pisana aplikacija itd.
+
+<!-- PREGLED KROZ FUNCKIJE APLIKACIJE I MOGUČNOSTI -->
+
+## Pregled kroz funkcije apliakcije i mogućnosti
+
+:small_blue_diamond: Proći kroz svaki XML pojedinačno i objasniti kako se aplikacija koristi te funkcije pojedinačno.
+
+<!-- INFORMACIJE O AUTORIMA PROJEKTA -->
+
+## Informacije o autorima projekta 
+
+:man: Filip Vlaisavljević (dodati informacije)<br>
+:man: Stefan Košavić (dodati informacije)
+
+
+
+
+<!-- LICENSA -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
