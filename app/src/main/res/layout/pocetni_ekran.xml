@@ -32,15 +32,15 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="384dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="367dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/homenaje"
         android:gravity="center"
-        android:text="Dobrodošao u aplikaciju za vakcinaciju. Da bi nastavio dalje pritisni dugme ispod."
-        android:textSize="24sp"
+        android:text="Dobrodošli u aplikaciju za vakcinaciju. Da bi se uspješno prijavili potrebno je da popunite određene podatke. Za početak pritisnite dugme ispod."
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/naslov" />
 
@@ -48,14 +48,16 @@
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/homenaje"
         android:text="ZAPOČNI PRIJAVU"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="26sp"
-        app:backgroundTint="#80DEEA"
+        app:backgroundTint="#39A3DB"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
