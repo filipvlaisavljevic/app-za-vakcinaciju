@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradient"
     android:layout_height="match_parent"
     tools:context=".ProvjeraKorisnika">
 
@@ -10,56 +11,56 @@
         android:id="@+id/objasnjenje_bolovanje"
         android:layout_width="331dp"
         android:layout_height="118dp"
+        android:fontFamily="@font/asap"
         android:gravity="center"
         android:text="@string/provjera_bolesti"
-        android:textSize="18sp"
-        android:fontFamily="@font/asap"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintTop_toBottomOf="@+id/bolujem_od"
+        app:layout_constraintVertical_bias="0.223" />
 
     <EditText
         android:id="@+id/bolujem_od"
         android:layout_width="320dp"
         android:layout_height="59dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:fontFamily="@font/asap"
+        android:inputType="textPersonName"
         android:text="@string/bolest"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.345" />
+        app:layout_constraintTop_toBottomOf="@+id/naslov_da_li_bolujete"
+        app:layout_constraintVertical_bias="0.112" />
 
     <TextView
         android:id="@+id/naslov_da_li_bolujete"
-        android:layout_width="244dp"
-        android:layout_height="115dp"
+        android:layout_width="359dp"
+        android:layout_height="211dp"
+        android:fontFamily="@font/asap"
         android:gravity="center"
         android:text="@string/da_li_bolujete"
         android:textColor="@color/teal_700"
-        android:fontFamily="@font/asap"
-        android:textSize="30sp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <Button
         android:id="@+id/bolovanje_submit"
-        android:layout_width="333dp"
-        android:layout_height="62dp"
+        android:layout_width="410dp"
+        android:layout_height="69dp"
         android:text="@string/btn_provjera_bolesti"
+        android:textSize="16sp"
+        app:backgroundTint="@color/btn_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813" />
+        app:layout_constraintTop_toBottomOf="@+id/objasnjenje_bolovanje" />
 </androidx.constraintlayout.widget.ConstraintLayout>
