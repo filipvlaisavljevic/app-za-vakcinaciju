@@ -31,19 +31,19 @@
 <!-- INFORMACIJE O PROJEKTU -->
 ## Informacije o projektu
 
-:small_blue_diamond: Napisati osnovne informacije o aplikaciji, šta nudi, kako se koristi i koliko je efikasna i korisna.
+- Napisati osnovne informacije o aplikaciji, šta nudi, kako se koristi i koliko je efikasna i korisna.
 
 <!-- ALATI KORISTENI PRILIKOM IZRADE PROJEKTA -->
 
 ## Alati korišteni prilikom izrade projekta
 
-:small_blue_diamond: Napisati u kojem okruženju je pisana aplikacija itd.
+- Napisati u kojem okruženju je pisana aplikacija itd.
 
 <!-- PREGLED KROZ FUNCKIJE APLIKACIJE I MOGUČNOSTI -->
 
 ## Pregled kroz funkcije apliakcije i mogućnosti
 
-:small_blue_diamond: Proći kroz svaki XML pojedinačno i objasniti kako se aplikacija koristi te funkcije pojedinačno.
+- Proći kroz svaki XML pojedinačno i objasniti kako se aplikacija koristi te funkcije pojedinačno.
 
 <!-- INFORMACIJE O AUTORIMA PROJEKTA -->
 
