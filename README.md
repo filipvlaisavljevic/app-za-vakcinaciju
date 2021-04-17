@@ -27,6 +27,22 @@
   </ol>
 </details>
 
+## Boje korištene u projektu
+
+- #FF39A3DB dugmad
+- bijela
+- crna
+
+## Aktivnosti
+- Za svaku aktivnost u code dijelu od XML dodati background kao kod `android:background="@drawable/gradient"`
+- pocetni_ekran -> početni ekran kao dobrodošlica
+- provjera_korisnika -> korisnik unosi ukoliko boluje od neke bolesti, ukoliko ne, ostavlja polje prazno, napisati adekvatnu poruku i upute korisniku
+- osnovne_informacije -> korisnik unosi osnovne informacije o sebi
+
+## To-do lista
+
+- provjeru da li korisnik ima prepreku za primanje vakcine (trenutno boluje od virusa Covid-19, trudnoća i sl.) -> Stefan
+- prikupljanje podataka o korisniku (obavezno godine) -> Filip
 
 <!-- INFORMACIJE O PROJEKTU -->
 ## Informacije o projektu
