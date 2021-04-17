@@ -2,6 +2,8 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/</item>
+        <item>@font/anton</item>
+        <item>@font/homenaje</item>
         <item>@font/lato_thin</item>
         <item>@font/ubuntu_light</item>
     </array>
