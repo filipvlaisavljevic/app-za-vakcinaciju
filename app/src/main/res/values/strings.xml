@@ -4,4 +4,13 @@
     <string name="bolest">Bolujem od...</string>
     <string name="da_li_bolujete">Da li bolujete od neke bolesti?</string>
     <string name="btn_provjera_bolesti">Nastavi ka vakcinaciji</string>
+    <string name="prioritetna_grupa_naslov">Da li pripadate nekoj od prioritetnih grupa?</string>
+    <string name="prioritetna_grupa_objasnjenje">Ukoliko pripadate nekoj od prioritetnih grupa, označite kojoj. Ukoliko ne pripadate niti jednoj od ponuđenih grupa, označite polje "Ne pripadam".</string>
+    <string name="prioritetna_grupa_btn">NASTAVI DALJE</string>
+    <string name="prioritetna_grupa_ch_bx1">Hronični bolesnici</string>
+    <string name="prioritetna_grupa_ch_bx2">Medicinski radnici</string>
+    <string name="prioritetna_grupa_ch_bx3">Boravak u staračkom domu</string>
+    <string name="prioritetna_grupa_ch_bx4">Ne pripadam </string>
+
+
 </resources>
