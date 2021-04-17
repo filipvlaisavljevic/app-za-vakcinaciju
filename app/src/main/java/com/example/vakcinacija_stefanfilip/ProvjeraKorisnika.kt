@@ -6,6 +6,6 @@ import android.os.Bundle
 class ProvjeraKorisnika : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_provjera_korisnika)
+        setContentView(R.layout.provjera_korisnika)
     }
 }
