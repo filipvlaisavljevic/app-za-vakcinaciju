@@ -30,7 +30,7 @@
 ## To-do lista
 
 - provjeru da li korisnik ima prepreku za primanje vakcine (trenutno boluje od virusa Covid-19, trudnoća i sl.) -> Stefan
-- prikupljanje podataka o korisniku (obavezno godine)
+- prikupljanje podataka o korisniku (obavezno godine) -> Filip
 
 <!-- INFORMACIJE O PROJEKTU -->
 ## Informacije o projektu
