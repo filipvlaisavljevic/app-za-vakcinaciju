@@ -11,6 +11,14 @@
     <string name="prioritetna_grupa_ch_bx2">Medicinski radnici</string>
     <string name="prioritetna_grupa_ch_bx3">Boravak u staračkom domu</string>
     <string name="prioritetna_grupa_ch_bx4">Ne pripadam </string>
+    <string name="sazetak_naslov">Osnovne informacije o korisniku</string>
+    <string name="imePrezime">Ime i prezime:</string>
+    <string name="datum">Datum rođenja:</string>
+    <string name="grad">Grad:</string>
+    <string name="ulica">Ulica stanovanja:</string>
+    <string name="bolestKonacno">Boluje od:</string>
+    <string name="grupa">Prioritetna grupa:</string>
+    <string name="prazno">/</string>
 
 
 </resources>
