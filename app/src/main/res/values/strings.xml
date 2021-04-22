@@ -23,6 +23,8 @@
     <string name="brojac">812 </string>
     <string name="lokacija_vakcinacije">Lokacija vakcinacije: </string>
     <string name="vrijeme_vakcinacije">Vrijeme vakcinacije: </string>
+    <string name="statisticki_prikaz">Statistički prikaz izbora vakcine </string>
+
 
 
 </resources>
