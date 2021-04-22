@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".brojLjudiZaVakcinaciju">
+
+    <TextView
+        android:id="@+id/naslov_broja_ljudi"
+        android:layout_width="393dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:fontFamily="@font/asap"
+        android:gravity="center"
+        android:text="@string/naslov_broja_ljudi"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lokacija_vakcinisanja"
+        android:layout_width="175sp"
+        android:layout_height="41sp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/asap"
+        android:gravity="center_vertical"
+        android:text="@string/lokacija_vakcinacije"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brojac" />
+
+    <TextView
+        android:id="@+id/lokacija_vakcinacije_pravo"
+        android:layout_width="250sp"
+        android:layout_height="41sp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/asap"
+        android:gravity="center_vertical"
+        android:text="Vojna bolnica"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lokacija_vakcinisanja" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0sp"
+        android:layout_height="100sp"
+        android:fontFamily="@font/asap"
+        android:text="@string/prioritetna_grupa_btn"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/brojac"
+        android:layout_width="150sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/asap"
+        android:gravity="center"
+        android:text="@string/brojac"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naslov_broja_ljudi" />
+
+    <TextView
+        android:id="@+id/vrijeme_vakcinacije"
+        android:layout_width="175sp"
+        android:layout_height="41sp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/asap"
+        android:gravity="center_vertical"
+        android:text="@string/vrijeme_vakcinacije"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lokacija_vakcinacije_pravo" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="250sp"
+        android:layout_height="41sp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/asap"
+        android:gravity="center_vertical"
+        android:text="12:30"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vrijeme_vakcinacije" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
