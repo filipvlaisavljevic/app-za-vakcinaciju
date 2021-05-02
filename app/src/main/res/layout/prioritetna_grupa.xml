@@ -89,7 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
-        android:id="@+id/prioritetna_grupa_btn"
+        android:id="@+id/nastavidalje"
         android:layout_width="0sp"
         android:layout_height="100sp"
         android:text="Button"

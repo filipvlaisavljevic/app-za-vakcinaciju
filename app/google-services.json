@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "735854325105",
+    "firebase_url": "https://projekat-b7446.firebaseio.com",
+    "project_id": "projekat-b7446",
+    "storage_bucket": "projekat-b7446.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735854325105:android:bc785b07b202c9ee341ad0",
+        "android_client_info": {
+          "package_name": "com.example.vakcinacija_stefanfilip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735854325105-5kdn4e70mfg99ui3hrtmqfrbun2927q9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpw8DJV4teu_1u9xI9apbHlZtUMcyzCbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "735854325105-5kdn4e70mfg99ui3hrtmqfrbun2927q9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
