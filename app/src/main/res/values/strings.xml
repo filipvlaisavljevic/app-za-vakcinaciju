@@ -24,6 +24,13 @@
     <string name="lokacija_vakcinacije">Lokacija vakcinacije: </string>
     <string name="vrijeme_vakcinacije">Vrijeme vakcinacije: </string>
     <string name="statisticki_prikaz">Statistički prikaz izbora vakcine </string>
+    <string name="izborVakcine">Želim da se vakcinišem jednom od ponuđenih vakcina:  </string>
+    <string name="straniDrzavljanin">Vakcinacija trenutno nije moguća za strane državljane.  </string>
+    <string name="straniDrzavljaninBTN">POVRATAK NAZAD </string>
+    <string name="vakcinacijaObjasnjenje"> Molimo Vas da unesete osnovne informacije potrebne za vakcinaciju. Informacije se neće zloupotrebljavati te će se isključivo koristiti za arhiviranje vakcinisanih te zdravstvene papire. </string>
+
+
+
 
 
 </resources>
