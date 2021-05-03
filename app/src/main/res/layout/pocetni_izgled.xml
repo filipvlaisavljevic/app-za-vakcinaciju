@@ -7,42 +7,51 @@
     android:background="@drawable/gradient"
     tools:context=".PocetniActivity">
 
-    <fragment
-        android:id="@+id/bosanski"
+    <FrameLayout
+        android:id="@+id/pocetnifragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></fragment>
+        app:layout_constraintTop_toTopOf="parent"></FrameLayout>
+
 
     <Button
         android:id="@+id/engleskitranslate"
-        android:layout_width="0dp"
+        android:layout_width="206dp"
         android:layout_height="50dp"
         android:fontFamily="@font/chivo"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
         android:text="English"
-        app:backgroundTint="#2596BE"
-        app:layout_constraintBottom_toTopOf="@+id/bosanski"
-        app:layout_constraintEnd_toStartOf="@+id/bosanskitranslate"
+        app:backgroundTint="#39A3DB"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/bosanskitranslate"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/bosanskitranslate"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="50dp"
         android:fontFamily="@font/asap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
         android:text="Bosanski"
-        app:backgroundTint="#2596BE"
-        app:layout_constraintBottom_toTopOf="@+id/bosanski"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/pocetnifragment"
+        app:layout_constraintEnd_toStartOf="@+id/engleskitranslate"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/engleskitranslate"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
