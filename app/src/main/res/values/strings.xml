@@ -28,9 +28,8 @@
     <string name="straniDrzavljanin">Vakcinacija trenutno nije moguća za strane državljane.  </string>
     <string name="straniDrzavljaninBTN">POVRATAK NAZAD </string>
     <string name="vakcinacijaObjasnjenje"> Molimo Vas da unesete osnovne informacije potrebne za vakcinaciju. Informacije se neće zloupotrebljavati te će se isključivo koristiti za arhiviranje vakcinisanih te zdravstvene papire. </string>
-
-
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
