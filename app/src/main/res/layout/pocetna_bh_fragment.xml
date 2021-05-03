@@ -60,6 +60,7 @@
         android:fontFamily="@font/asap"
         android:text="Započni prijavu"
         android:textSize="18sp"
+        app:backgroundTint="#2596BE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
