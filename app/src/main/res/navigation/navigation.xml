@@ -45,4 +45,22 @@
         android:name="com.example.vakcinacija_stefanfilip.VakcinaActivity"
         android:label="VakcinaActivity"
         tools:layout="@layout/vakcina_izgled"/>
+    <fragment
+        android:id="@+id/pocetna_bhFragment"
+        android:name="com.example.vakcinacija_stefanfilip.Pocetna_bhFragment"
+        android:label="pocetna_bh_fragment"
+        tools:layout="@layout/pocetna_bh_fragment" >
+        <action
+            android:id="@+id/action_pocetna_bhFragment_to_prijavaActivity"
+            app:destination="@id/prijavaActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/pocetna_enFragment"
+        android:name="com.example.vakcinacija_stefanfilip.Pocetna_enFragment"
+        android:label="pocetna_en_fragment"
+        tools:layout="@layout/pocetna_en_fragment" >
+        <action
+            android:id="@+id/action_pocetna_enFragment_to_prijavaActivity"
+            app:destination="@id/prijavaActivity" />
+    </fragment>
 </navigation>
