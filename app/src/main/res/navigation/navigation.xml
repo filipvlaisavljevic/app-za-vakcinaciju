@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/bolestActivity">
 
+    <activity
+        android:id="@+id/prijavaActivity"
+        android:name="com.example.vakcinacija_stefanfilip.PrijavaActivity"
+        android:label="PrijavaActivity"
+        tools:layout="@layout/prijava_izgled"/>
+    <activity
+        android:id="@+id/bolestActivity"
+        android:name="com.example.vakcinacija_stefanfilip.BolestActivity"
+        android:label="bolest_izgled"
+        tools:layout="@layout/bolest_izgled" />
+    <activity
+        android:id="@+id/prioritetnaActivity"
+        android:name="com.example.vakcinacija_stefanfilip.PrioritetnaActivity"
+        android:label="prioritetna_izgled"
+        tools:layout="@layout/prioritetna_izgled" />
+    <activity
+        android:id="@+id/stranacActivity"
+        android:name="com.example.vakcinacija_stefanfilip.StranacActivity"
+        android:label="StranacActivity"
+        tools:layout="@layout/stranac_izgled"/>
+    <activity
+        android:id="@+id/sazetakActivity"
+        android:name="com.example.vakcinacija_stefanfilip.SazetakActivity"
+        android:label="sazetak_izgled"
+        tools:layout="@layout/sazetak_izgled" />
+    <activity
+        android:id="@+id/brojActivity"
+        android:name="com.example.vakcinacija_stefanfilip.BrojActivity"
+        android:label="broj_izgled"
+        tools:layout="@layout/broj_izgled" />
+    <activity
+        android:id="@+id/statistikaActivity"
+        android:name="com.example.vakcinacija_stefanfilip.StatistikaActivity"
+        android:label="StatistikaActivity"
+        tools:layout="@layout/statistika_izgled"/>
+    <activity
+        android:id="@+id/vakcinaActivity"
+        android:name="com.example.vakcinacija_stefanfilip.VakcinaActivity"
+        android:label="VakcinaActivity"
+        tools:layout="@layout/vakcina_izgled"/>
 </navigation>
