@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class PrioritetnaGrupa : AppCompatActivity() {
+class PrioritetnaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.prioritetna_grupa)
+        setContentView(R.layout.prioritetna_izgled)
 
         val nastavidalje = findViewById<Button>(R.id.nastavidalje);
 
         nastavidalje.setOnClickListener {
-            val intent = Intent(this,SazetakPrethodnihOdgovora::class.java);
+            val intent = Intent(this,SazetakActivity::class.java);
             startActivity(intent);
         }
     }

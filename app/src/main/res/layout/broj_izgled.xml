@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".brojLjudiZaVakcinaciju">
+    tools:context=".BrojActivity">
 
     <TextView
         android:id="@+id/naslov_broja_ljudi"

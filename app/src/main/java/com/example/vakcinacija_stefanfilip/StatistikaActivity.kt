@@ -8,12 +8,12 @@ import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 
-class statisticki_prikaz_izbora_vakcine : AppCompatActivity() {
+class StatistikaActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.statisticki_prikaz_izbora_vakcine);
+        setContentView(R.layout.statistika_izgled);
         postaviStatistiku();
     }
 

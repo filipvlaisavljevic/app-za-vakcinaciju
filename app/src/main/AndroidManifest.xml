@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VakcinacijaStefanFilip">
-        <activity android:name=".OsnovneInformacije"></activity>
-        <activity android:name=".statisticki_prikaz_izbora_vakcine" />
-        <activity android:name=".brojLjudiZaVakcinaciju" />
-        <activity android:name=".SazetakPrethodnihOdgovora" />
-        <activity android:name=".PrioritetnaGrupa" />
-        <activity android:name=".ProvjeraKorisnika" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".PrijavaActivity"></activity>
+        <activity android:name=".StatistikaActivity" />
+        <activity android:name=".BrojActivity" />
+        <activity android:name=".SazetakActivity" />
+        <activity android:name=".PrioritetnaActivity" />
+        <activity android:name=".BolestActivity" />
+        <activity android:name=".PocetniActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
