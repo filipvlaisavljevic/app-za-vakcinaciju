@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
     tools:context=".Pocetna_enFragment">
 
     <ImageView
-        android:id="@+id/logo_bh"
+        android:id="@+id/logo_en"
         android:layout_width="272dp"
         android:layout_height="289dp"
         android:layout_marginTop="28dp"
@@ -28,13 +28,12 @@
         android:textColor="#2596BE"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_bh" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_en" />
 
     <TextView
         android:id="@+id/tekst_en"
-        android:layout_width="0dp"
+        android:layout_width="402dp"
         android:layout_height="80dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
@@ -47,12 +46,11 @@
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/naslov_en" />
 
     <Button
-        android:id="@+id/buttoncontinue"
+        android:id="@+id/buttoncontinue2"
         android:layout_width="0dp"
         android:layout_height="90dp"
         android:layout_marginTop="51dp"
@@ -67,9 +65,9 @@
         app:cornerRadius="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tekst_en"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.892" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

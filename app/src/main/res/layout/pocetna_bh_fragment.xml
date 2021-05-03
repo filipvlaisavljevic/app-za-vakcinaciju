@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
+    android:name="androidx.navigation.fragment.NavHostFragment"
     tools:context=".Pocetna_bhFragment">
 
     <ImageView
@@ -19,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/naslov_en"
+        android:id="@+id/naslov_bh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -28,13 +29,13 @@
         android:textColor="#2596BE"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_bh" />
 
     <TextView
-        android:id="@+id/tekst_en"
-        android:layout_width="0dp"
+        android:id="@+id/tekst_bh"
+        android:layout_width="402dp"
         android:layout_height="80dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
@@ -47,9 +48,8 @@
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/naslov_en" />
+        app:layout_constraintTop_toBottomOf="@+id/naslov_bh" />
 
     <Button
         android:id="@+id/buttoncontinue"
@@ -69,6 +69,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tekst_en"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tekst_bh"
+        app:layout_constraintVertical_bias="0.172" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,13 @@ package com.example.vakcinacija_stefanfilip
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
+import kotlinx.android.synthetic.main.pocetna_bh_fragment.*
 import kotlinx.android.synthetic.main.pocetni_izgled.*
 
 class PocetniActivity : AppCompatActivity() {
@@ -33,4 +39,5 @@ class PocetniActivity : AppCompatActivity() {
             }
         }
     }
+
 }
