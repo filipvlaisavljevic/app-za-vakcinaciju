@@ -6,7 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
+class StatistikaFragment : Fragment(R.layout.fragment_statistika) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-class Pocetna_enFragment : Fragment(R.layout.pocetna_en_fragment) {
+    }
 
 }

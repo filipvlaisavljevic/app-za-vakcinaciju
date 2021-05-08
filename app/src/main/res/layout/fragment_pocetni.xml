@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".PocetniFragment">
+
+
+    <Button
+        android:id="@+id/engleskitranslate"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/chivo"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="English"
+        app:backgroundTint="#39A3DB"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bosanskitranslate"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/bosanskitranslate"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/asap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="Bosanski"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/pocetnifragment"
+        app:layout_constraintEnd_toStartOf="@+id/engleskitranslate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo_bh"
+        android:layout_width="272dp"
+        android:layout_height="289dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_android_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/engleskitranslate" />
+
+    <TextView
+        android:id="@+id/naslov_bh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/asap"
+        android:text="Prijava za vakcinaciju"
+        android:textColor="#2596BE"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_bh" />
+
+    <TextView
+        android:id="@+id/tekst_bh"
+        android:layout_width="402dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/chivo"
+        android:gravity="center"
+        android:text="Dobrodošli u aplikaciju za vakcinaciju. Da bi se uspješno prijavili potrebno je da popunite određene podatke. Za početak pritisnite dugme ispod."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naslov_bh" />
+
+    <Button
+        android:id="@+id/dugmenastavak"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/asap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="Započni prijavu"
+        android:textSize="18sp"
+        app:backgroundTint="#39A3DB"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tekst_bh"
+        app:layout_constraintVertical_bias="0.172" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

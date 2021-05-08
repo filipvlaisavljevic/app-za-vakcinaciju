@@ -9,15 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.VakcinacijaStefanFilip">
-        <activity android:name=".VakcinaActivity"></activity>
-        <activity android:name=".StranacActivity" />
-        <activity android:name=".PrijavaActivity" />
-        <activity android:name=".StatistikaActivity" />
-        <activity android:name=".BrojActivity" />
-        <activity android:name=".SazetakActivity" />
-        <activity android:name=".PrioritetnaActivity" />
-        <activity android:name=".BolestActivity" />
-        <activity android:name=".PocetniActivity">
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

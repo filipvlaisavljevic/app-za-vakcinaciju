@@ -3,32 +3,92 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/pocetna_bhFragment">
-
-
+    app:startDestination="@id/pocetniFragment">
     <fragment
-        android:id="@+id/pocetna_bhFragment"
-        android:name="com.example.vakcinacija_stefanfilip.Pocetna_bhFragment"
-        android:label="pocetna_bh_fragment"
-        tools:layout="@layout/pocetna_bh_fragment" >
+        android:id="@+id/pocetniFragment"
+        android:name="com.example.vakcinacija_stefanfilip.PocetniFragment"
+        android:label="fragment_pocetni"
+        tools:layout="@layout/fragment_pocetni" >
         <action
-            android:id="@+id/action_pocetna_bhFragment_to_blankfragment"
-            app:destination="@id/blankfragment" />
+            android:id="@+id/action_pocetniFragment_to_pocetniENFragment"
+            app:destination="@id/pocetniENFragment" />
         <action
-            android:id="@+id/action_pocetna_bhFragment_to_blankfragment2"
-            app:destination="@id/blankfragment"
-            app:enterAnim="@anim/fragment_close_enter"
-            app:exitAnim="@anim/fragment_close_enter" />
+            android:id="@+id/action_pocetniFragment_to_prijavaFragment"
+            app:destination="@id/prijavaFragment" />
     </fragment>
     <fragment
-        android:id="@+id/pocetna_enFragment"
-        android:name="com.example.vakcinacija_stefanfilip.Pocetna_enFragment"
-        android:label="pocetna_en_fragment"
-        tools:layout="@layout/pocetna_en_fragment" />
-
+        android:id="@+id/pocetniENFragment"
+        android:name="com.example.vakcinacija_stefanfilip.PocetniENFragment"
+        android:label="fragment_pocetni_e_n"
+        tools:layout="@layout/fragment_pocetni_e_n" >
+        <action
+            android:id="@+id/action_pocetniENFragment_to_pocetniFragment"
+            app:destination="@id/pocetniFragment" />
+        <action
+            android:id="@+id/action_pocetniENFragment_to_prijavaFragment"
+            app:destination="@id/prijavaFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/blankfragment"
-        android:name="com.example.vakcinacija_stefanfilip.BlankFragment"
-        android:label="Blank Fragment"
-        tools:layout="@layout/fragment_blank" />
+        android:id="@+id/prijavaFragment"
+        android:name="com.example.vakcinacija_stefanfilip.PrijavaFragment"
+        android:label="fragment_prijava"
+        tools:layout="@layout/fragment_prijava" >
+        <action
+            android:id="@+id/action_prijavaFragment_to_prioritetnaFragment"
+            app:destination="@id/prioritetnaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prioritetnaFragment"
+        android:name="com.example.vakcinacija_stefanfilip.PrioritetnaFragment"
+        android:label="fragment_prioritetna"
+        tools:layout="@layout/fragment_prioritetna" >
+        <action
+            android:id="@+id/action_prioritetnaFragment_to_bolestFragment"
+            app:destination="@id/bolestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bolestFragment"
+        android:name="com.example.vakcinacija_stefanfilip.BolestFragment"
+        android:label="fragment_bolest"
+        tools:layout="@layout/fragment_bolest" >
+        <action
+            android:id="@+id/action_bolestFragment_to_vakcinaFragment"
+            app:destination="@id/vakcinaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sazetakFragment"
+        android:name="com.example.vakcinacija_stefanfilip.SazetakFragment"
+        android:label="fragment_sazetak"
+        tools:layout="@layout/fragment_sazetak" >
+        <action
+            android:id="@+id/action_sazetakFragment_to_terminFragment"
+            app:destination="@id/terminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vakcinaFragment"
+        android:name="com.example.vakcinacija_stefanfilip.VakcinaFragment"
+        android:label="fragment_vakcina"
+        tools:layout="@layout/fragment_vakcina" >
+        <action
+            android:id="@+id/action_vakcinaFragment_to_sazetakFragment"
+            app:destination="@id/sazetakFragment" />
+        <action
+            android:id="@+id/action_vakcinaFragment_to_statistikaFragment"
+            app:destination="@id/statistikaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/terminFragment"
+        android:name="com.example.vakcinacija_stefanfilip.TerminFragment"
+        android:label="fragment_termin"
+        tools:layout="@layout/fragment_termin" />
+    <fragment
+        android:id="@+id/statistikaFragment"
+        android:name="com.example.vakcinacija_stefanfilip.StatistikaFragment"
+        android:label="fragment_statistika"
+        tools:layout="@layout/fragment_statistika" />
+    <fragment
+        android:id="@+id/greskaFragment"
+        android:name="com.example.vakcinacija_stefanfilip.GreskaFragment"
+        android:label="fragment_greska"
+        tools:layout="@layout/fragment_greska" />
 </navigation>

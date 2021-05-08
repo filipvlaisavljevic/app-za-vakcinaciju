@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/gradient"
-    android:name="androidx.navigation.fragment.NavHostFragment"
-    tools:context=".Pocetna_bhFragment">
+    tools:context=".PocetniENFragment">
+
+    <Button
+        android:id="@+id/engleskitranslate"
+        android:layout_width="206dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/chivo"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="English"
+        app:backgroundTint="#39A3DB"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bosanskitranslate"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/bosanskitranslate"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/asap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="Bosanski"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/pocetnifragment"
+        app:layout_constraintEnd_toStartOf="@+id/engleskitranslate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/logo_bh"
@@ -15,9 +49,9 @@
         android:layout_marginTop="28dp"
         android:src="@drawable/ic_android_black_24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/engleskitranslate" />
 
     <TextView
         android:id="@+id/naslov_bh"
@@ -25,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/asap"
-        android:text="Prijava za vakcinaciju"
+        android:text="Vaccine appointment"
         android:textColor="#2596BE"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +78,7 @@
         android:layout_marginRight="5dp"
         android:fontFamily="@font/chivo"
         android:gravity="center"
-        android:text="Dobrodošli u aplikaciju za vakcinaciju. Da bi se uspješno prijavili potrebno je da popunite određene podatke. Za početak pritisnite dugme ispod."
+        android:text="Welcome to the application that lets you register for an appointment to get your covid vaccine. All you need is to fill some personal data and thats it!"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,7 +95,7 @@
         android:insetBottom="0dp"
         android:minWidth="0dp"
         android:minHeight="0dp"
-        android:text="Započni prijavu"
+        android:text="Proceed"
         android:textSize="18sp"
         app:backgroundTint="#39A3DB"
         app:cornerRadius="0dp"
@@ -71,4 +105,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tekst_bh"
         app:layout_constraintVertical_bias="0.172" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

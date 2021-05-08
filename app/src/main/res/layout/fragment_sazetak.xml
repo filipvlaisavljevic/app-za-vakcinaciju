@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/gradient"
     android:layout_height="match_parent"
-    tools:context=".SazetakActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient"
+    tools:context=".SazetakFragment">
 
     <TextView
         android:id="@+id/sazetak_naslov"
@@ -13,7 +13,7 @@
         android:layout_height="108dp"
         android:layout_marginStart="9dp"
         android:layout_marginLeft="9dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="9dp"
         android:layout_marginRight="9dp"
         android:gravity="center"
@@ -21,6 +21,7 @@
         android:textColor="@color/teal_700"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -97,13 +98,16 @@
         app:srcCompat="@drawable/ic_baseline_people_24" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/sazetakdugme"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:text="@string/prioritetna_grupa_btn"
+        android:layout_height="90dp"
         android:fontFamily="@font/asap"
-        android:gravity="center"
-        android:textSize="23sp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="Nastavak"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -283,4 +287,5 @@
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/grupa"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
