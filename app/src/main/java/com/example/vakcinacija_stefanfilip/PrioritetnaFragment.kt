@@ -44,4 +44,17 @@ class PrioritetnaFragment : Fragment(R.layout.fragment_prioritetna) {
         prioritetna = true
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putBoolean("prioritetna",prioritetna)
+    }
+
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+
+        if (savedInstanceState != null) {
+            prioritetna = savedInstanceState.getBoolean("prioritetna")
+        }
+    }
+
 }

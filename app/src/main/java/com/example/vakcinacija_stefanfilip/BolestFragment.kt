@@ -10,12 +10,12 @@ import kotlinx.android.synthetic.main.fragment_bolest.*
 
 class BolestFragment : Fragment(R.layout.fragment_bolest) {
     private val args: BolestFragmentArgs by navArgs()
-
+    private var bolujemod: String = ""
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         bolovanje_submit.setOnClickListener {
-            var bolujemod = bolujem_od.text.toString()
+            bolujemod = bolujem_od.text.toString()
 
             if(bolujemod.equals("Bolujem od..."))
                 bolujemod = "/"
@@ -30,6 +30,20 @@ class BolestFragment : Fragment(R.layout.fragment_bolest) {
                 bolujemod
             )
             findNavController().navigate(action)
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.putString("bolest",bolujemod)
+    }
+
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+
+        if (savedInstanceState != null) {
+            bolujemod = savedInstanceState.getString("bolest").toString()
         }
     }
 }

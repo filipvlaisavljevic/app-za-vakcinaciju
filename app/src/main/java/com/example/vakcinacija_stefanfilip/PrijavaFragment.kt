@@ -10,22 +10,58 @@ import kotlinx.android.synthetic.main.fragment_prijava.*
 
 
 class PrijavaFragment : Fragment(R.layout.fragment_prijava) {
+    private var ime: String = ""
+    private var prezime: String = ""
+    private var grad: String = ""
+    private var datum: String = ""
+    private var drzava: String = ""
+    private var ulica: String = ""
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         posaljipodatke.setOnClickListener {
 
-            val prezime = prezimetext.text.toString()
-            val ime = imetext.text.toString()
-            val grad = gradtext.text.toString()
-            val ulica = ulicatext.text.toString()
-            val datum = datumtext.text.toString()
-            val drzava = drzavatext.text.toString()
-            var action = PrijavaFragmentDirections.actionPrijavaFragmentToPrioritetnaFragment(ime,prezime,drzava, grad, ulica, datum)
+            prezime = prezimetext.text.toString()
+            ime = imetext.text.toString()
+            grad = gradtext.text.toString()
+            ulica = ulicatext.text.toString()
+            datum = datumtext.text.toString()
+            drzava = drzavatext.text.toString()
+
+            var action = PrijavaFragmentDirections.actionPrijavaFragmentToPrioritetnaFragment(
+                ime,
+                prezime,
+                drzava,
+                grad,
+                ulica,
+                datum)
             if(!drzava.equals("Bosna i Hercegovina"))
                 action = PrijavaFragmentDirections.actionPrijavaFragmentToGreskaFragment()
 
             findNavController().navigate(action)
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("ime",ime)
+        outState.putString("prezime",prezime)
+        outState.putString("grad",grad)
+        outState.putString("ulica",ulica)
+        outState.putString("datum",datum)
+        outState.putString("drzava",drzava)
+    }
+
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+        if (savedInstanceState != null) {
+            ime = savedInstanceState.getString("ime").toString()
+            prezime = savedInstanceState.getString("prezime").toString()
+            grad = savedInstanceState.getString("grad").toString()
+            ulica = savedInstanceState.getString("ulica").toString()
+            datum = savedInstanceState.getString("datum").toString()
+            drzava = savedInstanceState.getString("drzava").toString()
         }
     }
 }

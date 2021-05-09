@@ -10,11 +10,10 @@ import kotlinx.android.synthetic.main.fragment_vakcina.*
 
 class VakcinaFragment : Fragment(R.layout.fragment_vakcina) {
     private val args: VakcinaFragmentArgs by navArgs()
-
+    private var vakcina: String = ""
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var vakcina = ""
         if(pfizer.isChecked)
             vakcina = "Pfizer"
         else if(moderna.isChecked)
@@ -42,6 +41,20 @@ class VakcinaFragment : Fragment(R.layout.fragment_vakcina) {
         pogledajstatistiku.setOnClickListener {
             val action = VakcinaFragmentDirections.actionVakcinaFragmentToStatistikaFragment()
             findNavController().navigate(action)
+        }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.putString("vakcina",vakcina)
+    }
+
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+
+        if (savedInstanceState != null) {
+            vakcina = savedInstanceState.getString("vakcina").toString()
         }
     }
 }

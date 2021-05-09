@@ -64,4 +64,18 @@ class TerminFragment : Fragment(R.layout.fragment_termin) {
             }
         }.start()
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+
+        outState.putInt("prijavljeni",prijavljeni)
+    }
+
+    override fun onViewStateRestored(savedInstanceState: Bundle?) {
+        super.onViewStateRestored(savedInstanceState)
+
+        if (savedInstanceState != null) {
+            prijavljeni = savedInstanceState.getInt("prijavljeni")
+        }
+    }
 }
