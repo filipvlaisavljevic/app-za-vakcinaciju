@@ -14,7 +14,16 @@ class PrijavaFragment : Fragment(R.layout.fragment_prijava) {
         super.onViewCreated(view, savedInstanceState)
 
         posaljipodatke.setOnClickListener {
-            val action = PrijavaFragmentDirections.actionPrijavaFragmentToPrioritetnaFragment()
+
+            val prezime = prezimetext.text.toString()
+            val ime = imetext.text.toString()
+            val grad = gradtext.text.toString()
+            val ulica = ulicatext.text.toString()
+            val datum = datumtext.text.toString()
+            val drzava = drzavatext.text.toString()
+
+            val action = PrijavaFragmentDirections.actionPrijavaFragmentToPrioritetnaFragment(ime,prezime,drzava, grad, ulica, datum)
+
             findNavController().navigate(action)
         }
     }

@@ -128,7 +128,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sazetak_naslov" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/imeprezimeprikaz"
         android:layout_width="175dp"
         android:layout_height="41dp"
         android:layout_marginStart="10dp"
@@ -157,7 +157,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imePrezime" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/datumprikaz"
         android:layout_width="175dp"
         android:layout_height="41dp"
         android:layout_marginStart="10dp"
@@ -168,7 +168,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/datumRodj"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imeprezimeprikaz" />
 
     <TextView
         android:id="@+id/grad"
@@ -186,7 +186,7 @@
         app:layout_constraintTop_toBottomOf="@+id/datumRodj" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/gradprikaz"
         android:layout_width="175dp"
         android:layout_height="41dp"
         android:layout_marginStart="10dp"
@@ -197,7 +197,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/grad"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/datumprikaz" />
 
     <TextView
         android:id="@+id/ulica"
@@ -215,7 +215,7 @@
         app:layout_constraintTop_toBottomOf="@+id/grad" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/ulicaprikaz"
         android:layout_width="175dp"
         android:layout_height="41dp"
         android:layout_marginStart="10dp"
@@ -226,7 +226,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/ulica"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/gradprikaz" />
 
     <TextView
         android:id="@+id/bolest"
@@ -244,7 +244,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ulica" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/bolestprikaz"
         android:layout_width="175dp"
         android:layout_height="41dp"
         android:layout_marginStart="10dp"
@@ -256,7 +256,7 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/bolest"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/ulicaprikaz" />
 
     <TextView
         android:id="@+id/grupa"
@@ -274,7 +274,7 @@
         app:layout_constraintTop_toBottomOf="@+id/bolest" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/prioritetprikaz"
         android:layout_width="175dp"
         android:layout_height="41dp"
         android:layout_marginStart="10dp"
@@ -286,6 +286,6 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/grupa"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/bolestprikaz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

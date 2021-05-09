@@ -45,6 +45,24 @@
         <action
             android:id="@+id/action_prioritetnaFragment_to_bolestFragment"
             app:destination="@id/bolestFragment" />
+        <argument
+            android:name="ime"
+            app:argType="string" />
+        <argument
+            android:name="prezime"
+            app:argType="string" />
+        <argument
+            android:name="drzava"
+            app:argType="string" />
+        <argument
+            android:name="grad"
+            app:argType="string" />
+        <argument
+            android:name="ulica"
+            app:argType="string" />
+        <argument
+            android:name="datum"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/bolestFragment"
@@ -54,6 +72,28 @@
         <action
             android:id="@+id/action_bolestFragment_to_vakcinaFragment"
             app:destination="@id/vakcinaFragment" />
+        <argument
+            android:name="ime"
+            app:argType="string" />
+        <argument
+            android:name="prezime"
+            app:argType="string" />
+        <argument
+            android:name="datum"
+            app:argType="string" />
+        <argument
+            android:name="drzava"
+            app:argType="string" />
+        <argument
+            android:name="grad"
+            app:argType="string" />
+        <argument
+            android:name="ulica"
+            app:argType="string" />
+        <argument
+            android:name="prioritet"
+            app:argType="boolean"
+            android:defaultValue="false" />
     </fragment>
     <fragment
         android:id="@+id/sazetakFragment"
@@ -63,6 +103,35 @@
         <action
             android:id="@+id/action_sazetakFragment_to_terminFragment"
             app:destination="@id/terminFragment" />
+        <argument
+            android:name="ime"
+            app:argType="string" />
+        <argument
+            android:name="prezime"
+            app:argType="string" />
+        <argument
+            android:name="datum"
+            app:argType="string" />
+        <argument
+            android:name="drzava"
+            app:argType="string" />
+        <argument
+            android:name="grad"
+            app:argType="string" />
+        <argument
+            android:name="ulica"
+            app:argType="string" />
+        <argument
+            android:name="prioritet"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="bolest"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="vakcina"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/vakcinaFragment"
@@ -75,6 +144,32 @@
         <action
             android:id="@+id/action_vakcinaFragment_to_statistikaFragment"
             app:destination="@id/statistikaFragment" />
+        <argument
+            android:name="ime"
+            app:argType="string" />
+        <argument
+            android:name="prezime"
+            app:argType="string" />
+        <argument
+            android:name="datum"
+            app:argType="string" />
+        <argument
+            android:name="drzava"
+            app:argType="string" />
+        <argument
+            android:name="grad"
+            app:argType="string" />
+        <argument
+            android:name="ulica"
+            app:argType="string" />
+        <argument
+            android:name="prioritet"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="bolest"
+            app:argType="string"
+            android:defaultValue="null" />
     </fragment>
     <fragment
         android:id="@+id/terminFragment"
