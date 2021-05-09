@@ -22,8 +22,8 @@
 
     <TextView
         android:id="@+id/podnaslovInfo"
-        android:layout_width="403dp"
-        android:layout_height="91dp"
+        android:layout_width="382dp"
+        android:layout_height="92dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/asap"
         android:gravity="center"
@@ -48,7 +48,7 @@
 
     <EditText
         android:id="@+id/gradtext"
-        android:layout_width="269dp"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
@@ -65,7 +65,7 @@
 
     <EditText
         android:id="@+id/ulicatext"
-        android:layout_width="269dp"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
@@ -82,7 +82,7 @@
 
     <EditText
         android:id="@+id/datumtext"
-        android:layout_width="269dp"
+        android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
@@ -224,8 +224,9 @@
         android:ems="10"
         android:fontFamily="@font/asap"
         android:inputType="textPersonName"
-        android:text="Država"
+        android:hint="Država"
         android:textColor="@color/black"
+        android:textColorHint="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
