@@ -35,7 +35,8 @@
         tools:layout="@layout/fragment_prijava" >
         <action
             android:id="@+id/action_prijavaFragment_to_prioritetnaFragment"
-            app:destination="@id/prioritetnaFragment" />
+            app:destination="@id/prioritetnaFragment"
+            app:popUpTo="@id/pocetniFragment" />
     </fragment>
     <fragment
         android:id="@+id/prioritetnaFragment"

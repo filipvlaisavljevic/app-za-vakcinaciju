@@ -85,7 +85,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lokacija_vakcinacije_pravo" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/vrijemevakcinacije"
         android:layout_width="250sp"
         android:layout_height="41sp"
         android:layout_marginStart="36dp"
@@ -97,5 +97,26 @@
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vrijeme_vakcinacije" />
+
+    <Button
+        android:id="@+id/sharebutton"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="51dp"
+        android:fontFamily="@font/asap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="Podijeli sa ostalima"
+        android:textSize="18sp"
+        app:backgroundTint="#39A3DB"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vrijemevakcinacije"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
