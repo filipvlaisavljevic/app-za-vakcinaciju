@@ -21,8 +21,9 @@ class PrijavaFragment : Fragment(R.layout.fragment_prijava) {
             val ulica = ulicatext.text.toString()
             val datum = datumtext.text.toString()
             val drzava = drzavatext.text.toString()
-
-            val action = PrijavaFragmentDirections.actionPrijavaFragmentToPrioritetnaFragment(ime,prezime,drzava, grad, ulica, datum)
+            var action = PrijavaFragmentDirections.actionPrijavaFragmentToPrioritetnaFragment(ime,prezime,drzava, grad, ulica, datum)
+            if(!drzava.equals("Bosna i Hercegovina"))
+                action = PrijavaFragmentDirections.actionPrijavaFragmentToGreskaFragment()
 
             findNavController().navigate(action)
         }

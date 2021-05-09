@@ -29,7 +29,8 @@ class TerminFragment : Fragment(R.layout.fragment_termin) {
             sendIntent.action = Intent.ACTION_SEND
             sendIntent.putExtra(
                 Intent.EXTRA_TEXT,
-                "Upravo sam zakazao termin za vakcinaciju koristeći novu aplikaciju. Budi odgovoran i zakaži i ti svoj termin!"
+                "Upravo sam zakazao termin za vakcinaciju koristeći novu aplikaciju. Budi odgovoran i zakaži i ti svoj termin! Vakcinišem se: "
+            + datum + "!"
             )
             sendIntent.type = "text/plain"
             startActivity(sendIntent)

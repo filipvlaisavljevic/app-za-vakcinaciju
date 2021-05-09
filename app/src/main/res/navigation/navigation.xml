@@ -37,6 +37,10 @@
             android:id="@+id/action_prijavaFragment_to_prioritetnaFragment"
             app:destination="@id/prioritetnaFragment"
             app:popUpTo="@id/pocetniFragment" />
+        <action
+            android:id="@+id/action_prijavaFragment_to_greskaFragment"
+            app:destination="@id/greskaFragment"
+            app:popUpTo="@id/pocetniFragment" />
     </fragment>
     <fragment
         android:id="@+id/prioritetnaFragment"
