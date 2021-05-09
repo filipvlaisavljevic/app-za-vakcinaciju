@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".PrioritetnaFragment">
 
-    <RadioButton
-        android:id="@+id/radioButton7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="5dp"
-        android:text="Starački dom"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton6" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="356dp"
         android:layout_height="148dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/asap"
         android:gravity="center"
         android:text="@string/prioritetna_grupa_naslov"
         android:textColor="@color/teal_700"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,7 +29,7 @@
         android:layout_height="93dp"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
         android:fontFamily="@font/asap"
@@ -50,9 +38,57 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RadioGroup
+        android:layout_width="379dp"
+        android:layout_height="376dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/grupaprioritet"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints">
+
+
+        <RadioButton
+            android:id="@+id/staracki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Starački dom"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/hronicni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hronični bolesnici"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/medicinski"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicinski radnici"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/nepripadam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ne pripadam"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/nastavidalje"
@@ -73,43 +109,5 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:text="@string/prioritetna_grupa_btn" />
 
-    <RadioButton
-        android:id="@+id/radioButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="20dp"
-        android:text="Hronični bolesnici"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <RadioButton
-        android:id="@+id/radioButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="5dp"
-        android:text="Medicinski radnici"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton5" />
-
-    <RadioButton
-        android:id="@+id/radioButton8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="5dp"
-        android:text="Ne pripadam"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

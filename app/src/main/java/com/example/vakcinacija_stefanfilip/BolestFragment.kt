@@ -15,6 +15,10 @@ class BolestFragment : Fragment(R.layout.fragment_bolest) {
         super.onViewCreated(view, savedInstanceState)
 
         bolovanje_submit.setOnClickListener {
+            var bolujemod = bolujem_od.text.toString()
+
+            if(bolujemod.equals("Bolujem od..."))
+                bolujemod = "/"
             val action = BolestFragmentDirections.actionBolestFragmentToVakcinaFragment(
                 args.ime,
                 args.prezime,
@@ -23,7 +27,7 @@ class BolestFragment : Fragment(R.layout.fragment_bolest) {
                 args.grad,
                 args.ulica,
                 args.prioritet,
-                bolujem_od.text.toString()
+                bolujemod
             )
             findNavController().navigate(action)
         }

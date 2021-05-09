@@ -14,6 +14,16 @@ class VakcinaFragment : Fragment(R.layout.fragment_vakcina) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        var vakcina = ""
+        if(pfizer.isChecked)
+            vakcina = "Pfizer"
+        else if(moderna.isChecked)
+            vakcina = "Moderna"
+        else if(sputnik.isChecked)
+            vakcina = "Sputnik"
+        else if(astrazeneca.isChecked)
+            vakcina = "Astra Zeneca"
+
         vakcinanastavak.setOnClickListener {
             val action = VakcinaFragmentDirections.actionVakcinaFragmentToSazetakFragment(
                 args.ime,
@@ -24,7 +34,7 @@ class VakcinaFragment : Fragment(R.layout.fragment_vakcina) {
                 args.ulica,
                 args.prioritet,
                 args.bolest,
-                "Pfizer"
+                vakcina + " vakcina"
             )
             findNavController().navigate(action)
         }
