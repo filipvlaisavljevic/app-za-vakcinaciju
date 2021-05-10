@@ -34,8 +34,6 @@ Sama struktura aplikacije sačinjena je od više različitih fragmenata od kojih
 #### Navigaciona komponenta
 Navigacija se odnosi na interakcije koje omogućavaju korisnicima navigaciju kroz različite dijelove sadržaja u aplikaciji i natrag iz njih. Navigacijska komponenta također osigurava dosljedno i unaprijed poznato korisničko iskustvo pridržavajući se utvrđenog skupa principa. Navigacija se odvija između odredišta aplikacije - to jest bilo gdje u aplikaciji do koje korisnici mogu doći. Ova odredišta su povezana akcijama.
 
-![picture](https://i.imgur.com/frIX4vA.png)
-
 Grafikon za navigaciju je datoteka resursa koja sadrži sva odredišta i radnje. Grafikon predstavlja sve navigacijske staze aplikacije. Komponenta navigacija pruža niz mogućnosti, koje omogućavaju lakše korištenje aplikacije kao što su:
 - Pravilno rukovanje aktivnostima gore i nazad prema zadanim postavkama.
 - Omogućava standardiziranih resursa za animacije i prijelaze.
