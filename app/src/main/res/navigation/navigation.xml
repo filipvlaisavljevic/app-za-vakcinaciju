@@ -191,4 +191,22 @@
         android:name="com.example.vakcinacija_stefanfilip.GreskaFragment"
         android:label="fragment_greska"
         tools:layout="@layout/fragment_greska" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.vakcinacija_stefanfilip.InfoFragment"
+        android:label="Informacije"
+        tools:layout="@layout/fragment_info" >
+        <action
+            android:id="@+id/action_infoFragment_to_infoENFragment"
+            app:destination="@id/infoENFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoENFragment"
+        android:name="com.example.vakcinacija_stefanfilip.InfoENFragment"
+        android:label="fragment_info_e_n"
+        tools:layout="@layout/fragment_info_e_n" >
+        <action
+            android:id="@+id/action_infoENFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
 </navigation>

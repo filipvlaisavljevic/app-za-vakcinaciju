@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".InfoFragment">
+
+    <Button
+        android:id="@+id/engleskitranslateinfo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/chivo"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="English"
+        app:backgroundTint="#39A3DB"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bosanskitranslateinfo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/bosanskitranslateinfo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/asap"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="Bosanski"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/engleskitranslateinfo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="187dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/ic_baseline_info_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="382dp"
+        android:layout_height="126dp"
+        android:fontFamily="@font/asap"
+        android:gravity="center"
+        android:text="Mobilna aplikacija za prijavljivanje za vakcinaciju je projekat iz predmeta Razvoj mobilnih aplikacija na Odsjeku za matematiku, Prirodno-matematičkog fakulteta kod prof. dr. Elmedina Selmanovića. Projekat su uradili Stefan Košavić i Filip Vlaisavljević."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informacije o projektu"
+        android:textColor="#2596BE"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

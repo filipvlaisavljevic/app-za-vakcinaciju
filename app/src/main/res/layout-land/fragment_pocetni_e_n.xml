@@ -61,7 +61,7 @@
         android:fontFamily="@font/asap"
         android:text="Vaccine appointment"
         android:textColor="#2596BE"
-        android:textSize="30sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,8 +69,8 @@
 
     <TextView
         android:id="@+id/tekst_bh"
-        android:layout_width="482dp"
-        android:layout_height="60dp"
+        android:layout_width="475dp"
+        android:layout_height="38dp"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="4dp"
@@ -80,7 +80,7 @@
         android:gravity="center"
         android:text="Welcome to the application that lets you register for an appointment to get your covid vaccine. All you need is to fill some personal data and thats it!"
         android:textColor="#000000"
-        android:textSize="14sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/naslov_bh" />
