@@ -31,6 +31,8 @@ class BolestFragment : Fragment(R.layout.fragment_bolest) {
             )
             findNavController().navigate(action)
         }
+
+        bolujem_od.setOnFocusChangeListener { v, hasFocus -> bolujem_od.hint = ""  }
     }
 
     override fun onSaveInstanceState(outState: Bundle) {

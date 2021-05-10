@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_termin.*
+import kotlinx.coroutines.NonCancellable.cancel
 import kotlin.random.Random
 
 
@@ -18,7 +19,7 @@ class TerminFragment : Fragment(R.layout.fragment_termin) {
     private var sat: Int = 0
     private var datum: String = ""
     private var bolnice = arrayOf<String>("Vojna bolnica, Sarajevo", "Klinički centar, Sarajevo", "Punkt Zetra, Sarajevo", "Punkt BBI,Sarajevo")
-
+    private lateinit var timer: CountDownTimer
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         napraviTermin()
@@ -54,7 +55,7 @@ class TerminFragment : Fragment(R.layout.fragment_termin) {
     }
 
     fun startTimeCounter(view: View) {
-        object : CountDownTimer(125000, 3000) {
+        timer = object: CountDownTimer(17500, 3000) {
             override fun onTick(millisUntilFinished: Long) {
                 prijavljeni += (0 until 500).random()
                 brojac.text = prijavljeni.toString()
@@ -77,5 +78,10 @@ class TerminFragment : Fragment(R.layout.fragment_termin) {
         if (savedInstanceState != null) {
             prijavljeni = savedInstanceState.getInt("prijavljeni")
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        timer.cancel()
     }
 }
