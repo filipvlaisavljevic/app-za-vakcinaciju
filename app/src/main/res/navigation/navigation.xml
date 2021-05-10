@@ -7,8 +7,8 @@
     <fragment
         android:id="@+id/pocetniFragment"
         android:name="com.example.vakcinacija_stefanfilip.PocetniFragment"
-        android:label="fragment_pocetni"
-        tools:layout="@layout/fragment_pocetni" >
+        android:label="Prijava za vakcinaciju"
+        tools:layout="@layout/fragment_pocetni">
         <action
             android:id="@+id/action_pocetniFragment_to_pocetniENFragment"
             app:destination="@id/pocetniENFragment" />
@@ -19,8 +19,8 @@
     <fragment
         android:id="@+id/pocetniENFragment"
         android:name="com.example.vakcinacija_stefanfilip.PocetniENFragment"
-        android:label="fragment_pocetni_e_n"
-        tools:layout="@layout/fragment_pocetni_e_n" >
+        android:label="Prijava za vakcinaciju"
+        tools:layout="@layout/fragment_pocetni_e_n">
         <action
             android:id="@+id/action_pocetniENFragment_to_pocetniFragment"
             app:destination="@id/pocetniFragment" />
@@ -31,8 +31,8 @@
     <fragment
         android:id="@+id/prijavaFragment"
         android:name="com.example.vakcinacija_stefanfilip.PrijavaFragment"
-        android:label="fragment_prijava"
-        tools:layout="@layout/fragment_prijava" >
+        android:label="Prijava za vakcinaciju"
+        tools:layout="@layout/fragment_prijava">
         <action
             android:id="@+id/action_prijavaFragment_to_prioritetnaFragment"
             app:destination="@id/prioritetnaFragment"
@@ -45,8 +45,8 @@
     <fragment
         android:id="@+id/prioritetnaFragment"
         android:name="com.example.vakcinacija_stefanfilip.PrioritetnaFragment"
-        android:label="fragment_prioritetna"
-        tools:layout="@layout/fragment_prioritetna" >
+        android:label="Prijava za vakcinaciju"
+        tools:layout="@layout/fragment_prioritetna">
         <action
             android:id="@+id/action_prioritetnaFragment_to_bolestFragment"
             app:destination="@id/bolestFragment" />
@@ -72,8 +72,8 @@
     <fragment
         android:id="@+id/bolestFragment"
         android:name="com.example.vakcinacija_stefanfilip.BolestFragment"
-        android:label="fragment_bolest"
-        tools:layout="@layout/fragment_bolest" >
+        android:label="Prijava za vakcinaciju"
+        tools:layout="@layout/fragment_bolest">
         <action
             android:id="@+id/action_bolestFragment_to_vakcinaFragment"
             app:destination="@id/vakcinaFragment" />
@@ -97,14 +97,14 @@
             app:argType="string" />
         <argument
             android:name="prioritet"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/sazetakFragment"
         android:name="com.example.vakcinacija_stefanfilip.SazetakFragment"
-        android:label="fragment_sazetak"
-        tools:layout="@layout/fragment_sazetak" >
+        android:label="Prijava za vakcinaciju"
+        tools:layout="@layout/fragment_sazetak">
         <action
             android:id="@+id/action_sazetakFragment_to_terminFragment"
             app:destination="@id/terminFragment" />
@@ -128,12 +128,12 @@
             app:argType="string" />
         <argument
             android:name="prioritet"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
         <argument
             android:name="bolest"
-            app:argType="string"
-            android:defaultValue="null" />
+            android:defaultValue="null"
+            app:argType="string" />
         <argument
             android:name="vakcina"
             app:argType="string" />
@@ -141,8 +141,8 @@
     <fragment
         android:id="@+id/vakcinaFragment"
         android:name="com.example.vakcinacija_stefanfilip.VakcinaFragment"
-        android:label="fragment_vakcina"
-        tools:layout="@layout/fragment_vakcina" >
+        android:label="Prijava za vakcinaciju"
+        tools:layout="@layout/fragment_vakcina">
         <action
             android:id="@+id/action_vakcinaFragment_to_sazetakFragment"
             app:destination="@id/sazetakFragment" />
@@ -169,33 +169,33 @@
             app:argType="string" />
         <argument
             android:name="prioritet"
-            app:argType="boolean"
-            android:defaultValue="false" />
+            android:defaultValue="false"
+            app:argType="boolean" />
         <argument
             android:name="bolest"
-            app:argType="string"
-            android:defaultValue="null" />
+            android:defaultValue="null"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/terminFragment"
         android:name="com.example.vakcinacija_stefanfilip.TerminFragment"
-        android:label="fragment_termin"
+        android:label="Prijava za vakcinaciju"
         tools:layout="@layout/fragment_termin" />
     <fragment
         android:id="@+id/statistikaFragment"
         android:name="com.example.vakcinacija_stefanfilip.StatistikaFragment"
-        android:label="fragment_statistika"
+        android:label="Prijava za vakcinaciju"
         tools:layout="@layout/fragment_statistika" />
     <fragment
         android:id="@+id/greskaFragment"
         android:name="com.example.vakcinacija_stefanfilip.GreskaFragment"
-        android:label="fragment_greska"
+        android:label="Prijava za vakcinaciju"
         tools:layout="@layout/fragment_greska" />
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.example.vakcinacija_stefanfilip.InfoFragment"
-        android:label="Informacije"
-        tools:layout="@layout/fragment_info" >
+        android:label="Prijava za vakcinaciju"
+        tools:layout="@layout/fragment_info">
         <action
             android:id="@+id/action_infoFragment_to_infoENFragment"
             app:destination="@id/infoENFragment" />
@@ -203,8 +203,8 @@
     <fragment
         android:id="@+id/infoENFragment"
         android:name="com.example.vakcinacija_stefanfilip.InfoENFragment"
-        android:label="fragment_info_e_n"
-        tools:layout="@layout/fragment_info_e_n" >
+        android:label="Prijava za vakcinaciju"
+        tools:layout="@layout/fragment_info_e_n">
         <action
             android:id="@+id/action_infoENFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
