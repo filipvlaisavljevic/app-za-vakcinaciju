@@ -85,7 +85,7 @@ Ovaj fragment je poslijedni fragment ove aplikacije. Na ovom fragmentu se nalazi
 
 ## Autori projekta
 
-:man: Filip Vlaisavljević  - Prirodno-matematički fakultet, Sarajevo 
+:man: Filip Vlaisavljević  - Prirodno-matematički fakultet, Sarajevo <br>
 :man: Stefan Košavić - Prirodno-matematički fakultet, Sarajevo
 
 
