@@ -10,7 +10,7 @@
     Mobilna aplikacija napravljena sa ciljem lakše evidencije i prijava za vakcinaciju tijekom pandemije izazvane Covid-19 virusom. U teškoj situaciji u borbi sa korona virusom, pravovremena vakcinacija je ključna. Ova omogućava jednostavnu prijavu za vakcinaciju. Sve što trebate je upisati svoje lične podatke i odabrati kojom vakcinom se želite vakcinisati. Aplikacija vodi računa o ukupnom broju dosad prijavljenih korisnika i na taj način ubrzava sam proces vakcinacije.
     <br />
     <br />
-    <a href="#dodati_youtube_link">Pogledaj Demo</a>
+    <a href="https://www.youtube.com/watch?v=qQi_xP5znF8">Pogledaj Demo</a>
   </p>
 </p>
 
