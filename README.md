@@ -20,10 +20,9 @@
 <details open="open">
   <summary><h2 style="display: inline-block">Sadržaj projekta</h2></summary>
   <ol>
-    <li><a href="#o-projektu">Struktura apliakcije</a></li>
-    <li><a href="#getting-started">Fragmenti aplikacije</a></li>
-    <li><a href="#funkcije">Pregled kroz funkcije aplikacije i mogućnosti</a></li>
-    <li><a href="#o-autorima">Informacije o autorima projekta</a></li>
+    <li><a href="#struktura-aplikacije">Struktura apliakcije</a></li>
+    <li><a href="#fragmenti-aplikacije">Fragmenti aplikacije</a></li>
+    <li><a href="#autori-projekta">Informacije o autorima projekta</a></li>
   </ol>
 </details>
 
