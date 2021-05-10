@@ -29,7 +29,29 @@
 
 <!-- INFORMACIJE O PROJEKTU -->
 ## Struktura aplikacije
-Sama struktura aplikacije sačinjena je od više različitih fragmenata od kojih svaki ima svoju ulogu. Na svakom fragmentu postavljena su sljedeća ograničenja: font, size, layouti za svaki fragment itd. Korištena je navigacijska komponenta zajedno sa bočnim menijem, bottom menijem te navigacijom putem buttona.
+Sama struktura aplikacije sačinjena je od više različitih fragmenata od kojih svaki ima svoju ulogu. Na svakom fragmentu postavljena su sljedeća ograničenja: font, size, layouti za svaki fragment itd. Korištena je navigacijska komponenta zajedno sa bočnim menijem, bottom menijem te navigacijom putem buttona. Većina fragmenata urađena je koristeći ConstraintLayout kako bi se lakše postigao željeni raspored elemenata u fragmentu. Za textualne informacije, kroz cijelu aplikaciju, korišten je font family: "font/asap".Veličina fonta naslova je 40 sp, veličina fonta na buttonima je 23 sp, dok svaki text view ima font 16 sp. U res/values folderu korišten je string.xml za svaki oblik texta kako bi se izbjeglo korištenje "hardcodiran-ih" naziva i textualnih polja. Za dizajn su iskorištene 3 nijanse plave boje, te je raspored ključnh elemenata na svakom fragmentu isti kako bi se držali standardnih Android vizuelnih rješenja.
+
+#### Navigaciona komponenta
+Navigacija se odnosi na interakcije koje omogućavaju korisnicima navigaciju kroz različite dijelove sadržaja u aplikaciji i natrag iz njih. Navigacijska komponenta također osigurava dosljedno i unaprijed poznato korisničko iskustvo pridržavajući se utvrđenog skupa principa. Navigacija se odvija između odredišta aplikacije - to jest bilo gdje u aplikaciji do koje korisnici mogu doći. Ova odredišta su povezana akcijama.
+
+![picture](https://i.imgur.com/frIX4vA.png)
+
+Grafikon za navigaciju je datoteka resursa koja sadrži sva odredišta i radnje. Grafikon predstavlja sve navigacijske staze aplikacije. Komponenta navigacija pruža niz mogućnosti, koje omogućavaju lakše korištenje aplikacije kao što su:
+- Pravilno rukovanje aktivnostima gore i nazad prema zadanim postavkama.
+- Omogućava standardiziranih resursa za animacije i prijelaze.
+- Daje poveznicu između svih fragmenata aplikacije
+- Sadrži Safe Args - Gradle dodatak koji pruža sigurnost tipa prilikom navigacije i prosljeđivanja podataka između odredišta
+
+#### Bočni meni
+
+Nakon što korisnik pokrene aplikaciju, u lijevom gornjem uglu nalazi se button koji, kada se klikne, otvara bočni meni.  U otvorenom bočnom meniju korisnik ima dvije opcije:
+
+- Klik na "Vrati se na početak" koji ga vodi nazad na početnu stranicu
+- Klik na "Informacije" koje prikazuju kratki opis aplikacije i imena studentata koji su vršili razvoj ove aplikacije 
+
+Ukoliko korisnik klikne na "Informacije" ima mogućnost da odabere na kojem jeziku (bosanski ili engleski) želi da pročita osnovne informacije o aplikaciji.  Nakon što provjeri informacije o projektu korisnik ima mogućnost da se vrati na početni frgment na 2 načina:
+- Klikom na "Vrati se na početak" u donjem lijevom uglu (dio bottom menija)
+- Ponovnim klikom na bočni menij i unutar bočnog menija pronaći "Vrati se na početak" što ga vodi na početni fragment koji započinje prijavu za vakcinaciju
 
 <!-- INFORMACIJE O PROJEKTU -->
 ## Fragmenti aplikacije
@@ -67,7 +89,7 @@ Ovaj fragment je poslijedni fragment ove aplikacije. Na ovom fragmentu se nalazi
 
 ## Autori projekta
 
-:man: Filip Vlaisavljević - Prirodno-matematički fakultet, Sarajevo <br>
+:man: Filip Vlaisavljević  - Prirodno-matematički fakultet, Sarajevo 
 :man: Stefan Košavić - Prirodno-matematički fakultet, Sarajevo
 
 
